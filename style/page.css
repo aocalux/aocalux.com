@@ -1,0 +1,52 @@
+body {
+    background-color: #141414;
+    color: lightcyan;
+    font-size: larger;
+}
+
+.page {
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 260px;
+}
+
+.page a {
+    color: rgb(237, 9, 222);
+    text-decoration: none;
+}
+
+.page a:hover {
+    color: rgba(237, 9, 222, 0.682);
+    text-decoration: underline;
+}
+
+.title {
+    text-align: center;
+    font-size: 350%;
+}
+
+.content {
+    margin-top: 25px;
+}
+
+.titleWithSpace {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.path {
+    font-size: smaller;
+    color: gray;
+}
+
+.path a {
+    color: rgb(138, 57, 243);
+}
+
+.path a:hover {
+    color: rgb(93, 34, 171);
+}
+
+hr {
+    border: 0.5px solid #2e2e2e;
+}

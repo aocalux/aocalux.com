@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>aocalux | Wallpaper</title>
+    <link rel="shortcut icon" href="/img/fav.png">
+    <link rel="stylesheet" href="/style/page.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <link rel="stylesheet" href="/style/fontstyle.css">
+    <link rel="stylesheet" href="/style/button.css">
+    <link rel="stylesheet" href="/style/wallpaper.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <br>
+        <a href="http://www.aocalux.com" class="logo">
+            <img src="/img/logo.png" alt="aocalux FuG Logo">
+        </a>
+        <div class="nav">
+            <br>
+
+            <a href="/">Home</a> <br>
+            <a href="/webprojects/">Web Projects</a> <br>
+            <a href="/softwareprojects/">Software Projects</a> <br>
+            <a href="/wallpaper/">Wallpaper</a> <br>
+            <a href="/wiki/">Wiki</a> <br>
+            <a href="/contact">Contact</a> <br>
+
+        </div>
+        <div class="legal">
+            <a href="/contact/">Contact</a> <br>
+            <a href="/impressum/" target="_blank">Impressum</a> <br>
+            <a href="/privacy-policy/" target="_blank">Privacy Policy</a> <br>
+            <a href="/organizations/aocalux-FuG/">© 2024-2026 - aocalux FuG</a>
+        </div>
+    </div>
+
+    <div class="page">
+        <h1 class="title">Other Wallpapers</h1>
+
+        <div class="path">
+            <hr>
+            &nbsp; / &nbsp; <a href="/wallpaper/">Wallpaper</a> &nbsp; /
+            &nbsp; <a href="/wallpaper/other.html">Other Wallpapers</a> &nbsp; /
+            <hr>
+        </div>
+
+        <div class="content">
+            <div id="content">Loading Wallpapers...</div>
+            <script>
+                (async () => {
+
+                    const response1 = await fetch("/wallpaper/wallpaper-source/names/other.json");
+                    let data = await response1.json();
+
+                    for (let i = data.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+
+                        [data[i], data[j]] = [data[j], data[i]];
+                    }
+
+                    const content = document.getElementById("content");
+
+                    content.innerHTML = ""
+
+                    for (let row of data) {
+                        content.innerHTML += "<br><div class=\"wall-pane-outer\" id=\"rrose_bush_on_beach\"><div class=\"wall-pane\"><a href=\"other.html?get=" + row.name + "\"><img src=\"wallpaper-source/other/" + row.name + "\" alt=\"\"></a></div><div class=\"button\"><a href=\"license/\">&nbsp;🔑 License &nbsp;</a><a href=\"other.html?get=" + row.name + "\">&nbsp;💾 Download &nbsp;</a></div></div><br> <br>"
+                    }
+                    setTimeout(download, 500);
+
+                })()
+
+                function download() {
+                    let parms = new URLSearchParams(document.location.search);
+                    let getparm = parms.get("get");
+                    if (getparm != null && getparm != "") {
+                        let licenseAgree = confirm("By downloading " + getparm + " you agree to the license terms (www.aocalux.com/wallpaper/license/). Do you want to proceed?");
+                        if (licenseAgree) {
+                            const dLink = document.createElement("a");
+                            dLink.href = "/wallpaper/wallpaper-source/other/" + getparm;
+                            dLink.download = getparm;
+                            document.body.appendChild(dLink);
+                            dLink.click();
+                            document.body.removeChild(dLink);
+                        }
+                    }
+                }
+            </script>
+
+            <div style="text-align: center; color: lightgray; margin-bottom: 12px;">
+                <br>
+                ----- Copyright © 2024-2026 C. Prickartz -----
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

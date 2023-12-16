@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>aocalux | Wallpaper</title>
+    <link rel="shortcut icon" href="/img/fav.png">
+    <link rel="stylesheet" href="/style/page.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <link rel="stylesheet" href="/style/fontstyle.css">
+    <link rel="stylesheet" href="/style/button.css">
+    <link rel="stylesheet" href="/style/wallpaperselcet.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <br>
+        <a href="http://www.aocalux.com" class="logo">
+            <img src="/img/logo.png" alt="aocalux FuG Logo">
+        </a>
+        <div class="nav">
+            <br>
+
+            <a href="/">Home</a> <br>
+            <a href="/webprojects/">Web Projects</a> <br>
+            <a href="/softwareprojects/">Software Projects</a> <br>
+            <a href="/wallpaper/" class="isActive">Wallpaper</a> <br>
+            <a href="/wiki/">Wiki</a> <br>
+            <a href="/contact">Contact</a> <br>
+
+        </div>
+        <div class="legal">
+            <a href="/contact/">Contact</a> <br>
+            <a href="/impressum/" target="_blank">Impressum</a> <br>
+            <a href="/privacy-policy/" target="_blank">Privacy Policy</a> <br>
+            <a href="/organizations/aocalux-FuG/">© 2024-2026 - aocalux FuG</a>
+        </div>
+    </div>
+
+    <div class="page">
+        <h1 class="title">Wallpaper</h1>
+
+        <div class="path">
+            <hr>
+            &nbsp; / &nbsp; <a href="/wallpaper/">Wallpaper</a> &nbsp; /
+            <hr>
+        </div>
+
+        <div class="content">
+            <div class="wall-pane-outer">
+                <div class="wall-pane">
+                    <a href="irl.html">
+                        <img src="wallpaper-source/irl_preview.png" id="slideshow1" alt="">
+                    </a>
+                </div>
+                <div class="button2">
+                    <a href="irl.html">&nbsp; 🪴 IRL Wallpapers 🪴 &nbsp;</a>
+                </div>
+            </div>
+
+            <div class="wall-pane-outer">
+                <div class="wall-pane">
+                    <a href="other.html">
+                        <img src="wallpaper-source/other_preview.png" id="slideshow2" alt="">
+                    </a>
+                </div>
+                <div class="button2">
+                    <a href="other.html">&nbsp; 🎨 Other Wallpapers 🎨 &nbsp;</a>
+                </div>
+            </div>
+
+            <script>
+                function shuffleArray(array) {
+                    for (let i = array.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+
+                        [array[i], array[j]] = [array[j], array[i]];
+                    }
+                    return array;
+                }
+            </script>
+
+            <script>
+                (async () => {
+                    let images1 = [
+
+                    ];
+
+                    const response1 = await fetch("/wallpaper/wallpaper-source/names/irl.json");
+                    const data1 = await response1.json();
+
+                    for (let row of data1) {
+                        images1.push("wallpaper-source/irl/" + row.name);
+                    }
+
+                    images1 = shuffleArray(images1);
+
+                    let currentIndex1 = 0;
+                    const imageElement1 = document.getElementById("slideshow1");
+
+                    function changeImage1() {
+                        imageElement1.src = images1[currentIndex1];
+                        currentIndex1 = (currentIndex1 + 1) % images1.length;
+                    }
+
+                    setInterval(changeImage1, 3200 + Math.floor(Math.random() * 1000));
+
+                })()
+
+            </script>
+
+            <script>
+                    (async () => {
+                        let images2 = [
+
+                        ];
+
+
+                        const response2 = await fetch("/wallpaper/wallpaper-source/names/other.json");
+                        const data2 = await response2.json();
+
+                        for (let row of data2) {
+                            images2.push("wallpaper-source/other/" + row.name);
+                        }
+
+                        images2 = shuffleArray(images2);
+
+                        let currentIndex2 = 0;
+                        const imageElement2 = document.getElementById("slideshow2");
+
+                        function changeImage2() {
+                            imageElement2.src = images2[currentIndex2];
+                            currentIndex2 = (currentIndex2 + 1) % images2.length;
+                        }
+
+                        setInterval(changeImage2, 3000 + Math.floor(Math.random() * 1000));
+                    })()
+            </script>
+
+            <br> <br>
+        </div>
+    </div>
+</body>
+
+</html>

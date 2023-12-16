@@ -1,0 +1,44 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table {
+    border: 2px solid rgb(77, 77, 77);
+    border-radius: 5px;
+}
+
+th, td {
+    border: 2px solid rgb(56, 56, 56);
+    overflow: hidden;
+    padding: 8px;
+}
+
+th {
+    background-color: rgb(66, 21, 107);
+}
+
+td {
+    vertical-align: top;
+}
+
+.date {
+    width: 16%;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: hsl(0, 0%, 6.5%);
+}
+
+.tags {
+    width: 25%;
+}
+
+.entry a {
+    color: rgb(222, 181, 255);
+}
+
+.entry a:hover {
+    color: rgb(222, 181, 255);
+}
