@@ -1,2 +1,2 @@
 # aocalux.com
-Weiterleitung auf Private Seite
+Weiterleitung auf Projektwebseite aocalux.dev
