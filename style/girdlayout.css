@@ -2,17 +2,18 @@
     margin-left: 3%;   
     margin-right: 3%;  
     display: grid;
+    margin-top: 40px;
 }
 
 .grid {
-grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Adjust min-width as needed */
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust min-width as needed */
 gap: 5px;
 }
 
 /* For smaller screens */
 @media only screen and (max-width: 768px) {
 .grid {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Adjust min-width for smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust min-width for smaller screens */
     gap: 5px;
 }
 }
@@ -24,6 +25,8 @@ gap: 5px;
     width: 95%;
     text-align: center;
     background-color: #1b1b1b;
+    margin-bottom: 20px;
+    font-size: larger;
 }
 
 .entry a {
