@@ -1,0 +1,36 @@
+.grid {
+    margin-left: 3%;   
+    margin-right: 3%;  
+    display: grid;
+}
+
+.grid {
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Adjust min-width as needed */
+gap: 5px;
+}
+
+/* For smaller screens */
+@media only screen and (max-width: 768px) {
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Adjust min-width for smaller screens */
+    gap: 5px;
+}
+}
+
+.entry {
+    border: 3px;
+    border-color: whitesmoke;
+    border-style: solid;
+    width: 95%;
+    text-align: center;
+    background-color: #1b1b1b;
+}
+
+.entry a {
+    color: darkcyan;
+}
+
+.entry a:hover {
+    text-decoration: underline;
+    color: cyan;
+}
