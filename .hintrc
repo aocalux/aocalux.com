@@ -10,6 +10,7 @@
       {
         "meta-refresh": "off"
       }
-    ]
+    ],
+    "disown-opener": "off"
   }
 }
