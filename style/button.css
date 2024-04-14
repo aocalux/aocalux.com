@@ -1,0 +1,17 @@
+.button a {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    display: inline-block;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.button a:hover {
+    text-decoration: none;
+    background-color: rgb(190, 190, 190);
+    border-color: rgb(190, 190, 190);
+    color: black;
+}
