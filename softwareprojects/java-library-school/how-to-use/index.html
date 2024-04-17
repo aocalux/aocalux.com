@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>How to use - Java Library School - Aocalux Project Page</title>
+        <link rel="shortcut icon" href="/img/fav.png">
+        <link rel="stylesheet" href="/style/page.css">
+        <link rel="stylesheet" href="/style/navbar.css">
+        <link rel="stylesheet" href="/style/fontstyle.css">
+        <link rel="stylesheet" href="/style/colortext.css">
+        <link rel="stylesheet" href="/style/button.css">
+
+        <link rel="stylesheet" href="/style/code.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <br>
+            <a href="http://aocalux.com" class="logo">😈</a>
+            <div class="nav">
+                <br>
+    
+                <a href="/">Home</a> <br>
+                <a href="/webprojects/">Web Projects</a> <br>
+                <a href="/softwareprojects/">Software Projects</a> <br>
+                <a href="/wiki/">Wiki</a> <br>
+                <a href="/contact">Contact</a> <br>
+
+            </div>
+            <div class="legal">
+                <a href="/contact/">Contact</a> <br>
+                <a href="/impressum/" target="_blank">Impressum</a> <br>
+                <a href="https://chris-prickartz.de" target="_blank">© 2024 - C. Prickartz</a>
+            </div>
+        </div>
+
+        <div class="page">
+            <h1 class="title">How to use - Java Library School</h1>
+
+            <div class="path">
+                <hr>
+                &nbsp; / &nbsp; <a href="/softwareprojects/">Software Projects</a> &nbsp; /
+                &nbsp; <a href="/softwareprojects/java-library-school/">Java Library School</a> &nbsp; /
+                &nbsp; <a href="/softwareprojects/java-library-school/how-to-use/">How to use</a> &nbsp; /
+                <hr>
+            </div>
+
+<div class="content">
+<h2 style="margin-bottom: 10px;">Instalation of Java Library School</h2>
+• Download the zip file: <b>lib.zip</b> from the page <a href="/softwareprojects/java-library-school/">Java Library School</a> <br>
+• Extract the contents of the folder <br>
+• copy the <b>folder lib</b> contained in the zip in to the root of your project <br>
+
+<h2 class="titleWithSpace">Use of Java Library School</h2>
+<h3>Import the library:</h3>
+<pre>
+<code class="comment">// import for reading user input</code>
+<code class="keyword">import</code> lib.Console.Read;
+
+<code class="comment">// import for writing 1d & 2d arrays</code>
+<code class="keyword">import</code> lib.Console.Write;
+
+<code class="comment">// import for generating random integers</code>
+<code class="keyword">import</code> lib.Math.Random;
+</pre>
+
+<h3>Creating the Objects:</h3>
+<pre>
+<code class="comment">// Object for reading user input</code>
+Read read = <code class="keyword">new</code> Read();
+
+<code class="comment">// Object for writing 1d & 2d arrays</code>
+Write write = <code class="keyword">new</code> Write();
+
+<code class="comment">// Object for generating a random integer</code>
+Random rnd = <code class="keyword">new</code> Random();
+</pre>
+
+<h3>Reading user input:</h3>
+<pre>
+<code class="comment">// Error that will be displayed if the user inputs the wrong data type</code>
+<code class="keyword">String</code> error_msg = <code class="string">"Wrong input!"</code>
+
+<code class="comment">// Reading an integer</code>
+<code class="keyword">int</code> user_input_int = read.<code class="function">nextInt</code>(error_msg);
+
+<code class="comment">// Reading a byte</code>
+<code class="keyword">byte</code> user_input_byte = read.<code class="function">nextByte</code>(error_msg);
+
+<code class="comment">// Reading a short</code>
+<code class="keyword">short</code> user_input_short = read.<code class="function">nextShort</code>(error_msg);
+
+<code class="comment">// Reading a long</code>
+<code class="keyword">long</code> user_input_long = read.<code class="function">nextLong</code>(error_msg);
+
+<code class="comment">// Reading a float</code>
+<code class="keyword">float</code> user_input_float = read.<code class="function">nextFloat</code>(error_msg);
+
+<code class="comment">// Reading a double</code>
+<code class="keyword">double</code> user_input_double = read.<code class="function">nextDouble</code>(error_msg);
+
+<code class="comment">// Reading a boolean</code>
+<code class="keyword">boolean</code> user_input_boolean = read.<code class="function">nextBoolean</code>(error_msg);
+
+<code class="comment">// Reading an String</code>
+<code class="keyword">String</code> user_input_String = read.<code class="function">nextLine</code>(error_msg);
+</pre>
+
+<!--
+<h3>Setting an prefix / sufix for outputs:</h3>
+<pre>
+<code class="comment">// Set an prefix for outputs</code>
+write.<code class="function">setPrifix</code>(<code class="string">"Global Prefix"</code>); 
+
+<code class="comment">// Set an sufix for outputs</code>
+write.<code class="function">setSufix</code>(<code class="string">"Global Sufix"</code>); 
+</pre>
+-->
+
+<h3>Printing arrays:</h3>
+The example below shows only the functions for printing int arrays. For all other functions the naming scheme is the same as for inputs.
+<pre>
+<code class="comment">// Int arrays to print</code>
+<code class="keyword">int[]</code> 1d_int_array = { <code class="number">97</code>, <code class="number">111</code>, <code class="number">99</code>, <code class="number">97</code>, <code class="number">108</code>, <code class="number">117</code>, <code class="number">120</code> };
+<code class="keyword">int[][]</code> 2d_int_array = {{ <code class="number">23</code>, <code class="number">73</code>, <code class="number">225</code>, }, { <code class="number">59</code>, <code class="number">53</code>, <code class="number">25</code>, }, { <code class="number">12</code>, <code class="number">73</code>, <code class="number">225</code>, }};
+
+<code class="comment">// Write 1D int array</code>
+write.<code class="function">arrayInt1</code>(1d_int_array); 
+
+<code class="comment">// Write 2D int array</code>
+write.<code class="function">arrayInt2</code>(2d_int_array); 
+</pre>
+
+<h3>Generating an random intager</h3>
+<pre>
+<code class="comment">// range for random int</code>
+<code class="keyword">int</code> min = <code class="number">0</code>;
+<code class="keyword">int</code> max = <code class="number">42</code>;
+
+<code class="comment">// Generate random int</code>
+<code class="keyword">int</code> randomNumber = rnd.<code class="function">rndInt</code>(min, max);
+</pre>
+
+</div>
+        </div>
+    </body>
+</html>
