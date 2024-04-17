@@ -1,0 +1,28 @@
+pre {
+    background-color: #212121;
+    border: 1px solid #212121;
+    font-family: monospace;
+    padding: 10px;
+    overflow: auto;
+
+  }
+  
+.comment {
+    color: #7c7c7c;
+  }
+  
+.keyword {
+    color: #e79b59;
+  }
+  
+.function {
+    color: #23b99b;
+  }
+  
+.string {
+    color: #f7c3df;
+  }
+  
+.number {
+    color: #d8f7a2;
+  }

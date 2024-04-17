@@ -1,0 +1,30 @@
+<pre>
+<code class="comment">// Import lib for writing arrays</code>
+<code class="keyword">import</code> lib.Console.Write<code class="symbole">;</code>
+
+<code class="comment">// Import lib for generating random integers</code>
+<code class="keyword">import</code> lib.Math.Random<code class="symbole">;</code>
+
+<code class="comment">// Import lib for reading all data types securly</code>
+<code class="keyword">import</code> lib.Console.Read;
+
+<code class="comment">// creating the objects</code>
+Write write = <code class="keyword">new</code> Write();
+Random random = <code class="keyword">new</code> Random();
+Read read = <code class="keyword">new</code> Read();
+
+<code class="comment">// Write 1D array named array1d</code>
+write.<code class="function">arrayInt1</code>(array1d);
+
+<code class="comment">// Write 5 emty lines</code>
+write.<code class="function">emtyln</code>(<code class="number">5</code>);
+
+<code class="comment">// Write 2D array named array1d</code>
+write.<code class="function">arrayInt2</code>(array2d);
+
+<code class="comment">// generating a random integer</code>
+<code class="keyword">int</code> rndNumber = random.<code class="function">rndInt</code>(<code class="number">2</code>,<code class="number">5</code>);
+
+<code class="comment">// reading a string</code>
+<code class="keyword">String</code> in = read.<code class="function">nextLine</code>(<code class="string">"This is an error message"</code>);
+</pre>
