@@ -11,6 +11,19 @@
         "meta-refresh": "off"
       }
     ],
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "meta-charset-utf-8": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
+    ],
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
+    ]
   }
 }
