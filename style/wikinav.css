@@ -1,11 +1,16 @@
 table {
-    border: 3px solid rgb(77, 77, 77);
     border-collapse: collapse;
     width: 100%;
 }
 
-th, td {
+.table {
     border: 2px solid rgb(77, 77, 77);
+    border-radius: 5px;
+}
+
+th, td {
+    border: 2px solid rgb(56, 56, 56);
+    overflow: hidden;
     padding: 8px;
 }
 
