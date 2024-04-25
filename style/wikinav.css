@@ -13,6 +13,10 @@ th {
     background-color: rgb(66, 21, 107);
 }
 
+td {
+    vertical-align: top;
+}
+
 .date {
     width: 16%;
     text-align: center;
