@@ -45,48 +45,98 @@
 
             <div class="content">
                 <p>
-                    This giud will be helpfull if you have a computer, laptop or other computing divice,
-                    with curently has an OS installed witch uses GRUB as its boot menu. With this guid, you
-                    will be able to boot from a windows USB-Stick even if USB Boot is diabled, or the 
-                    boot menu is looked.
+                    This guide will be helpful if you have a computer, laptop, or other computing device that 
+                    currently has an operating system (OS) installed which uses GRUB as its boot menu. With this 
+                    guide, you will be able to boot from a Windows USB stick even if USB boot is disabled or the boot 
+                    menu is locked.
                 </p>
 
                 <p>
-                    <h3 style="margin-bottom: 10px;">Requirenments:</h3>
-                    • Windows 7 or newer <br>
-                    • USB-Stick (at least X GB) <br>
+                    <h3 style="margin-bottom: 10px;">Requirements:</h3>
+                    • Windows 8 or newer <br>
+                    • USB-Stick (at least 8 GB) <br>
                     • Windows 10 or 11 ISO <br>
                     • Rufus <br>
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 1:</h3>
-                    Download the Windows iso via the offical 
-                    <a href="/go/notdefined">Media Creation Tool</a>
+                    Download the Windows iso via the official
+                    <a href="https://www.microsoft.com/en-us/software-download/windows11">webpage</a>
                     from Microsoft.
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 2:</h3>
-                    Download the newest version of Rufus form 
-                    <a href="/go/notdefined">rufus.ie</a>
+                    Download the newest version of Rufus form
+                    <a href="https://rufus.ie/">rufus.ie</a>.
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 3:</h3>
-                    Start the rufus exe file you downloaded <br>
+                    Start the rufus exe file you downloaded. <br>
                     <img src="/img/rufus-after-start.png" alt="image of rufus after start" class="smallest-img no-syle">
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 4:</h3>
+                    Plug in your USB Stick and select it in rufus. <br>
+                    <img src="/img/rufus-after-usb-select.png" alt="image of rufus after the usb drive is selected" class="smallest-img no-syle"> <br>
+                    Make sure the USB drive dose not have any important data on it, as all data on the drive will be wiped! 
                 </p>
+                <p>
+                    <h3 class="titleWithSpace">Step 5:</h3>
+                    Select the Windows ISO you downloaded. <br>
+                    <img src="/img/rufus-after-iso-select.png" alt="image of rufus after the iso file is selected" class="smallest-img no-syle">
+                </p>
+                <p>
+                    <h3 class="titleWithSpace">Step 6:</h3>
+                    Change the Partition scheme to MBR and press Start to start the flashing of the USB Drive. <br>
+                    <img src="/img/rufus-final.png" alt="image of rufus with part sceam changed to MBR" class="smallest-img no-syle">
+                </p>
+                <p>
+                    <h3 class="titleWithSpace">Step 7:</h3>
+                    After the flashing has finished, unplug the usb drive and plug it in to the device you want to install Windows on.
+                </p>
+                <p>
+                    <h3 class="titleWithSpace">Step 8:</h3>
+                    Start the Computer and press ESC until you see a command line like this: <br>
+                    <img src="/img/grub-commandline.png" alt="grub command line" class="smallest-img no-syle">
+                </p>
+                <p>
+                    <h3 class="titleWithSpace">Step 9:</h3>
+                    You can enter the command:
 <pre>
 <code class="keyword">ls</code>
 </pre>
+                    to see all possible drives and partitions.
+                </p>
+                <p>
+                    <h3 class="titleWithSpace">Step 10:</h3>
+                    Select the boot partition on the Windows USB drive. Its will be named something like (hd[NUMBER],msdos[NUMBER]).
+                    You can select a partition with the command:
 <pre>
 <code class="keyword">set </code>root=(hd0,msdos1)
 </pre>
+                    The part after the root= shudt be your Windows boot partition on the USB drive. If you have multiple options you have to 
+                    try all of them.
+                </p>
+                <p>
+                    <h3 class="titleWithSpace">Step 11:</h3>
+                    Select the boot file:
 <pre>
 <code class="keyword">chainloader</code> /efi/Boot/bootx64.efi
 </pre>
-
+                    If this command fails you might have to try a different partition.
+                </p>
+                <p>
+                    <h3 class="titleWithSpace">Step 12:</h3>
+                    Enter the command:
+<pre>
+<code class="keyword">boot</code>
+</pre>
+                    to boot the selected Windows install.
+                </p>
+                <p>
+                    <h3 class="titleWithSpace">Step 13:</h3>
+                    Install Windows like normal.
+                </p>
 
             </div>
         </div>
