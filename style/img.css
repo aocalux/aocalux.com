@@ -17,6 +17,10 @@ img {
     border: none;
 }
 
+.smallest-img {
+    width: 40%;
+}
+
 .small-img {
     width: 49%;
 }
