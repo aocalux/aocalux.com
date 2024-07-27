@@ -10,3 +10,5 @@ Disallow: /dateien/no_search/
 Disallow: /blog/
 Disallow: /style/fonts/
 Disallow: /sample-code-highlight.html
+Disallow: /.nojekyll
+Disallow: /.well-known
