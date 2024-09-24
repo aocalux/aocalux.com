@@ -6,21 +6,21 @@
 }
 
 .grid {
-grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust min-width as needed */
+grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); /* Adjust min-width as needed */
 gap: 5px;
 }
 
 /* For smaller screens */
 @media only screen and (max-width: 768px) {
 .grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjust min-width for smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust min-width for smaller screens */
     gap: 5px;
 }
 }
 
 @media only screen and (max-width: 700px) {
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust min-width for smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Adjust min-width for smaller screens */
         gap: 2px;
     }
 }
