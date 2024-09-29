@@ -6,7 +6,7 @@
 }
 
 .grid {
-grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); /* Adjust min-width as needed */
+grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /* Adjust min-width as needed */
 gap: 5px;
 }
 
