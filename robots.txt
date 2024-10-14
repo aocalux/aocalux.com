@@ -13,3 +13,5 @@ Disallow: /sample-code-highlight.html
 Disallow: /.nojekyll
 Disallow: /.well-known
 Disallow: /privacy-policy/
+Disallow: /organizations/
+Disallow: index.js
