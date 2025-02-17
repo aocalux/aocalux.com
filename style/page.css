@@ -11,12 +11,12 @@ body {
 }
 
 .page a {
-    color: yellow;
+    color: rgb(237, 9, 222);
     text-decoration: none;
 }
 
 .page a:hover {
-    color: yellow;
+    color: rgba(237, 9, 222, 0.682);
     text-decoration: underline;
 }
 
@@ -40,11 +40,11 @@ body {
 }
 
 .path a {
-    color: darkorange;
+    color: rgb(138, 57, 243);
 }
 
 .path a:hover {
-    color: orange;
+    color: rgb(93, 34, 171);
 }
 
 hr {

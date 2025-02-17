@@ -38,10 +38,10 @@ gap: 5px;
 }
 
 .entry a {
-    color: darkcyan;
+    color: rgb(139, 0, 69);
 }
 
 .entry a:hover {
     text-decoration: underline;
-    color: cyan;
+    color: rgba(139, 0, 69, 0.782);
 }
