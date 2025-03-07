@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="/style/navbar.css">
         <link rel="stylesheet" href="/style/fontstyle.css">
         <link rel="stylesheet" href="/style/button.css">
-        <link rel="stylesheet" href="/style/wallpaper.css">
+        <link rel="stylesheet" href="/style/wallpaperselcet.css">
     </head>
     <body>
         <div class="navbar">
@@ -46,166 +46,71 @@
 
             <div class="content">
                 <br>
-                <div class="wall-pane-outer" id="code_desktop">
+                <div class="wall-pane-outer">
                     <div class="wall-pane">
-                        <a href="wallpaper-source/tgUv/1p9jmk8lawPmq8g7MpVreSSDTR7L2s.png" download>
-                            <img src="wallpaper-source/tgUv/1p9jmk8lawPmq8g7MpVreSSDTR7L2s.png" alt="">
+                        <a href="nature.html">
+                            <img src="wallpaper-source/AbN2/20240501141416275S.jpg" id="slideshow1" alt="">
                         </a>
                     </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/tgUv/1p9jmk8lawPmq8g7MpVreSSDTR7L2s.png" download>&nbsp;💾 Download &nbsp;</a>
+                    <div class="button2">
+                        <a href="nature.html">&nbsp; 🪴 Nature Wallpapers 🪴 &nbsp;</a>
                     </div>
                 </div>
-                <br> <br>
 
-                <div class="wall-pane-outer" id="aocalux_logo">
+                <div class="wall-pane-outer">
                     <div class="wall-pane">
-                        <a href="wallpaper-source/hKlw/HqD26c6VpQjy8vEVfjtrnOKlDvw6GC.png" download>
-                            <img src="wallpaper-source/hKlw/HqD26c6VpQjy8vEVfjtrnOKlDvw6GC.png" alt="">
+                        <a href="other.html">
+                            <img src="wallpaper-source\tgUv\1p9jmk8lawPmq8g7MpVreSSDTR7L2s.png" id="slideshow2" alt="">
                         </a>
                     </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/hKlw/HqD26c6VpQjy8vEVfjtrnOKlDvw6GC.png" download>&nbsp;💾 Download &nbsp;</a>
+                    <div class="button2">
+                        <a href="other.html">&nbsp; 🎨 Other Wallpapers 🎨 &nbsp;</a>
                     </div>
                 </div>
-                <br> <br>
 
-                <div class="wall-pane-outer" id="who_am_i">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/jW5k/5e7kgf1bpqMte7g3MtXydCCFSR5L2s.jpg" download>
-                            <img src="wallpaper-source/jW5k/5e7kgf1bpqMte7g3MtXydCCFSR5L2s.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/jW5k/5e7kgf1bpqMte7g3MtXydCCFSR5L2s.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                <script>
+                    const images1 = [
+                        "wallpaper-source/AbN2/20D2f4rw0rA521113227131.jpg",
+                        "wallpaper-source/kJaP/hJa8J2dtphMte7g3MtKsdw4FSR5L2s.jpg",
+                        "wallpaper-source/AbN2/202405234f12901e35DAf4.jpg",
+                        "wallpaper-source/AbN2/20240501141416275S.jpg",
+                        "wallpaper-source/aL2s/4Ad3fckAdf3rfEVfjt0Nc4lDvw6GC.jpg",
+                        "wallpaper-source/AbN2/20240429135940190.jpg"
+                    ];
 
-                <div class="wall-pane-outer" id="bluescreen_black">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/jLeQ/J9V26c6VpQlW8vEVfjt0Nc4lDvw6GC-black.png" download>
-                            <img src="wallpaper-source/jLeQ/J9V26c6VpQlW8vEVfjt0Nc4lDvw6GC-black.png" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/jLeQ/J9V26c6VpQlW8vEVfjt0Nc4lDvw6GC-black.png" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                    let currentIndex1 = 0;
+                    const imageElement1 = document.getElementById("slideshow1");
 
-                <div class="wall-pane-outer" id="bluescreen_blue">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/jLeQ/J9V26c6VpQlW8vEVfjt0Nc4lDvw6GC-blue.png" download>
-                            <img src="wallpaper-source/jLeQ/J9V26c6VpQlW8vEVfjt0Nc4lDvw6GC-blue.png" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/jLeQ/J9V26c6VpQlW8vEVfjt0Nc4lDvw6GC-blue.png" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                    function changeImage1() {
+                        imageElement1.src = images1[currentIndex1];
+                        currentIndex1 = (currentIndex1 + 1) % images1.length;
+                    }
 
-                <div class="wall-pane-outer" id="colorfull_blocks">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/aGeQ/j3K8bF2L5mQ7yP1xG6d4N0R9.jpg" download>
-                            <img src="wallpaper-source/aGeQ/j3K8bF2L5mQ7yP1xG6d4N0R9.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/aGeQ/j3K8bF2L5mQ7yP1xG6d4N0R9.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                    setInterval(changeImage1, 3200 + Math.floor(Math.random() * 1000));
+                </script>
 
-                <div class="wall-pane-outer" id="grass_rain_closeup">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/AbN2/20D2f4rw0rA521113227131.jpg" download>
-                            <img src="wallpaper-source/AbN2/20D2f4rw0rA521113227131.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/AbN2/20D2f4rw0rA521113227131.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                <script>
+                    const images2 = [
+                        "wallpaper-source/tgUv/1p9jmk8lawPmq8g7MpVreSSDTR7L2s.png",
+                        "wallpaper-source/hKlw/HqD26c6VpQjy8vEVfjtrnOKlDvw6GC.png",
+                        "wallpaper-source/jLeQ/J9V26c6VpQlW8vEVfjt0Nc4lDvw6GC-blue.png",
+                        "wallpaper-source/jW5k/5e7kgf1bpqMte7g3MtXydCCFSR5L2s.jpg",
+                        "wallpaper-source/jLeQ/J9V26c6VpQlW8vEVfjt0Nc4lDvw6GC-black.png",
+                        "wallpaper-source/aGeQ/j3K8bF2L5mQ7yP1xG6d4N0R9.jpg"
+                    ];
 
-                <div class="wall-pane-outer" id="black_and_withe_rose">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/kJaP/hJa8J2dtphMte7g3MtKsdw4FSR5L2s.jpg" download>
-                            <img src="wallpaper-source/kJaP/hJa8J2dtphMte7g3MtKsdw4FSR5L2s.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/kJaP/hJa8J2dtphMte7g3MtKsdw4FSR5L2s.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                    let currentIndex2 = 0;
+                    const imageElement2 = document.getElementById("slideshow2");
 
-                <div class="wall-pane-outer" id="tree_rain_closeup">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/AbN2/202405234f12901e35DAf4.jpg" download>
-                            <img src="wallpaper-source/AbN2/202405234f12901e35DAf4.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/AbN2/202405234f12901e35DAf4.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                    function changeImage2() {
+                        imageElement2.src = images2[currentIndex2];
+                        currentIndex2 = (currentIndex2 + 1) % images2.length;
+                    }
 
-                <div class="wall-pane-outer" id="beach_coste">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/AbN2/20240501141416275S.jpg" download>
-                            <img src="wallpaper-source/AbN2/20240501141416275S.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/AbN2/20240501141416275S.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                    setInterval(changeImage2, 3000 + Math.floor(Math.random() * 1000));
+                </script>
 
-                <div class="wall-pane-outer" id="red_rose_bush">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/aL2s/4Ad3fckAdf3rfEVfjt0Nc4lDvw6GC.jpg" download>
-                            <img src="wallpaper-source/aL2s/4Ad3fckAdf3rfEVfjt0Nc4lDvw6GC.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/aL2s/4Ad3fckAdf3rfEVfjt0Nc4lDvw6GC.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
                 <br> <br>
-
-                <div class="wall-pane-outer" id="field_and_mountains">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/AbN2/20240429135940190.jpg" download>
-                            <img src="wallpaper-source/AbN2/20240429135940190.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/AbN2/20240429135940190.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
-                <div style="text-align: center; color: lightgray; margin-bottom: 12px;">
-                    <br>
-                    ----- Copyright © 2024 C. Prickartz -----
-                </div>
             </div>
         </div>
     </body>
