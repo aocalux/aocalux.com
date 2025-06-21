@@ -51,7 +51,7 @@
                 <p>
                     This guide will be helpful if you have a computer, laptop, or other computing device that 
                     currently has an operating system (OS) installed which uses GRUB as its boot menu. With this 
-                    guide, you will be able to boot from a Windows USB stick even if USB boot is disabled or the boot 
+                    guide you will be able to boot from a Windows USB stick even if USB boot is disabled or the boot 
                     menu is locked.
                 </p>
 
@@ -64,25 +64,25 @@
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 1:</h3>
-                    Download the Windows iso via the official
+                    Download the Windows ISO from the official Microsoft
                     <a href="https://www.microsoft.com/en-us/software-download/windows11" target="_blank">webpage</a>
-                    from Microsoft.
+                    .
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 2:</h3>
-                    Download the newest version of Rufus form
+                    Download the newest version of Rufus from
                     <a href="https://rufus.ie/" target="_blank">rufus.ie</a>.
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 3:</h3>
                     Start the rufus exe file you downloaded. <br>
-                    <img src="/img/rufus-after-start.png" alt="image of rufus after start" class="smallest-img no-syle">
+                    <img src="/img/rufus-after-start.png" alt="image of rufus after start" class="smallest-img no-style">
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 4:</h3>
                     Plug in your USB Stick and select it in rufus. <br>
                     <img src="/img/rufus-after-usb-select.png" alt="image of rufus after the usb drive is selected" class="smallest-img no-syle"> <br>
-                    Make sure the USB drive dose not have any important data on it, as all data on the drive will be wiped! 
+                    Make sure the USB drive does not have any important data on it, as all data on the drive will be wiped! 
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 5:</h3>
@@ -92,7 +92,7 @@
                 <p>
                     <h3 class="titleWithSpace">Step 6:</h3>
                     Change the Partition scheme to MBR and press Start to start the flashing of the USB Drive. <br>
-                    <img src="/img/rufus-final.png" alt="image of rufus with part sceam changed to MBR" class="smallest-img no-syle">
+                    <img src="/img/rufus-final.png" alt="image of rufus with part scheme changed to MBR" class="smallest-img no-syle">
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 7:</h3>
@@ -100,7 +100,8 @@
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 8:</h3>
-                    Start the Computer and press ESC until you see a command line like this: <br>
+                    Start the computer and press ESC until you see a screen line like this (you may need to time it more precisely if
+                    ESC is your BIOS-Key): <br>
                     <img src="/img/grub-commandline.png" alt="grub command line" class="smallest-img" style="margin-top: 4px;">
                 </p>
                 <p>
@@ -109,16 +110,16 @@
 <pre>
 <code class="keyword">ls</code>
 </pre>
-                    to see all possible drives and partitions.
+                    to see all available drives and partitions.
                 </p>
                 <p>
                     <h3 class="titleWithSpace">Step 10:</h3>
-                    Select the boot partition on the Windows USB drive. Its will be named something like (hd[NUMBER],msdos[NUMBER]).
+                    Select the boot partition on the Windows USB drive. It will be named something like (hd[NUMBER],msdos[NUMBER]).
                     You can select a partition with the command:
 <pre>
 <code class="keyword">set </code>root=(hd0,msdos1)
 </pre>
-                    The part after the root= shudt be your Windows boot partition on the USB drive. If you have multiple options you have to 
+                    The part after the root= should be your Windows boot partition on the USB drive. If you have multiple options you may need to 
                     try all of them.
                 </p>
                 <p>
