@@ -51,7 +51,7 @@
             <div class="wall-pane-outer">
                 <div class="wall-pane">
                     <a href="irl.html">
-                        <img src="" id="slideshow1" alt="">
+                        <img src="wallpaper-source/irl_preview.png" id="slideshow1" alt="">
                     </a>
                 </div>
                 <div class="button2">
@@ -62,7 +62,7 @@
             <div class="wall-pane-outer">
                 <div class="wall-pane">
                     <a href="other.html">
-                        <img src="" id="slideshow2" alt="">
+                        <img src="wallpaper-source/other_preview.png" id="slideshow2" alt="">
                     </a>
                 </div>
                 <div class="button2">
@@ -71,56 +71,71 @@
             </div>
 
             <script>
-                (async () => {
-        const images1 = [
-                ];
-                
-                const response1 = await fetch("https://api.github.com/repos/aocalux/aocalux.com/contents/wallpaper/wallpaper-source/irl");
-                const data1 = await response1.json();
-
-                for (let row of data1) {
-                    images1.push("wallpaper-source/irl/" + row.name);
-                }
-
-
-
-                let currentIndex1 = 0;
-                const imageElement1 = document.getElementById("slideshow1");
-
-                function changeImage1() {
-                    imageElement1.src = images1[currentIndex1];
-                    currentIndex1 = (currentIndex1 + 1) % images1.length;
-                }
-
-                setInterval(changeImage1, 3200 + Math.floor(Math.random() * 1000));
-        
-      })()
-                
+                function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
             </script>
 
             <script>
                 (async () => {
-                const images2 = [
-                ];
+                    let images1 = [
+                        
+                    ];
 
-                
-                const response2 = await fetch("https://api.github.com/repos/aocalux/aocalux.com/contents/wallpaper/wallpaper-source/other");
-                const data2 = await response2.json();
+                    const response1 = await fetch("https://api.github.com/repos/aocalux/aocalux.com/contents/wallpaper/wallpaper-source/irl");
+                    const data1 = await response1.json();
 
-                for (let row of data2) {
-                    images2.push("wallpaper-source/other/" + row.name);
-                }
+                    for (let row of data1) {
+                        images1.push("wallpaper-source/irl/" + row.name);
+                    }
 
-                let currentIndex2 = 0;
-                const imageElement2 = document.getElementById("slideshow2");
+                    images1 = shuffleArray(images1);
 
-                function changeImage2() {
-                    imageElement2.src = images2[currentIndex2];
-                    currentIndex2 = (currentIndex2 + 1) % images2.length;
-                }
+                    let currentIndex1 = 0;
+                    const imageElement1 = document.getElementById("slideshow1");
 
-                setInterval(changeImage2, 3000 + Math.floor(Math.random() * 1000));
+                    function changeImage1() {
+                        imageElement1.src = images1[currentIndex1];
+                        currentIndex1 = (currentIndex1 + 1) % images1.length;
+                    }
+
+                    setInterval(changeImage1, 3200 + Math.floor(Math.random() * 1000));
+
                 })()
+
+            </script>
+
+            <script>
+                    (async () => {
+                        let images2 = [
+                            
+                        ];
+
+
+                        const response2 = await fetch("https://api.github.com/repos/aocalux/aocalux.com/contents/wallpaper/wallpaper-source/other");
+                        const data2 = await response2.json();
+
+                        for (let row of data2) {
+                            images2.push("wallpaper-source/other/" + row.name);
+                        }
+
+                        images2 = shuffleArray(images2);
+
+                        let currentIndex2 = 0;
+                        const imageElement2 = document.getElementById("slideshow2");
+
+                        function changeImage2() {
+                            imageElement2.src = images2[currentIndex2];
+                            currentIndex2 = (currentIndex2 + 1) % images2.length;
+                        }
+
+                        setInterval(changeImage2, 3000 + Math.floor(Math.random() * 1000));
+                    })()
             </script>
 
             <br> <br>
