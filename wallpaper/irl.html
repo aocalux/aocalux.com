@@ -45,229 +45,25 @@
                 <hr>
             </div>
 
-            <div class="content">
-                <br>
-                <div class="wall-pane-outer" id="rrose_bush_on_beach">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/7AbG/20240501161000076.jpg" download>
-                            <img src="wallpaper-source/7AbG/20240501161000076.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/7AbG/20240501161000076.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+            <div class="content" id="content">
 
-                <div class="wall-pane-outer" id="grass_rain_closeup">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/AbN2/20D2f4rw0rA521113227131.jpg" download>
-                            <img src="wallpaper-source/AbN2/20D2f4rw0rA521113227131.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/AbN2/20D2f4rw0rA521113227131.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                <script>
+                    (async () => {
 
-                <div class="wall-pane-outer" id="black_and_withe_rose">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/kJaP/hJa8J2dtphMte7g3MtKsdw4FSR5L2s.jpg" download>
-                            <img src="wallpaper-source/kJaP/hJa8J2dtphMte7g3MtKsdw4FSR5L2s.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/kJaP/hJa8J2dtphMte7g3MtKsdw4FSR5L2s.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                    const response1 = await fetch("/wallpaper/wallpaper-source/names/irl.names");
+                    const data1 = await response1.json();
 
-                <div class="wall-pane-outer" id="tree_rain_closeup">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/AbN2/202405234f12901e35DAf4.jpg" download>
-                            <img src="wallpaper-source/AbN2/202405234f12901e35DAf4.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/AbN2/202405234f12901e35DAf4.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                    const content = document.getElementById("content")
 
-                <div class="wall-pane-outer" id="beach_coste">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/AbN2/20240501141416275S.jpg" download>
-                            <img src="wallpaper-source/AbN2/20240501141416275S.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/AbN2/20240501141416275S.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                    for (let row of data1) {
+                        content.innerHTML += "<br><div class=\"wall-pane-outer\" id=\"rrose_bush_on_beach\"><div class=\"wall-pane\"><a href=\"wallpaper-source/irl/" + row.name + "\" download><img src=\"wallpaper-source/irl/" + row.name + "\" alt=\"\"></a></div><div class=\"button\"><a href=\"license/\">&nbsp;🔑 License &nbsp;</a><a href=\"wallpaper-source/7AbG/20240501161000076.jpg\" download>&nbsp;💾 Download &nbsp;</a></div></div><br> <br>"
+                    }
+                    })()
+                </script>
 
-                <div class="wall-pane-outer" id="rose_on_beach">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/7AbG/20240501163558888.jpg" download>
-                            <img src="wallpaper-source/7AbG/20240501163558888.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/7AbG/20240501163558888.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
+                
 
-                <div class="wall-pane-outer" id="red_rose_bush">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/aL2s/4Ad3fckAdf3rfEVfjt0Nc4lDvw6GC.jpg" download>
-                            <img src="wallpaper-source/aL2s/4Ad3fckAdf3rfEVfjt0Nc4lDvw6GC.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/aL2s/4Ad3fckAdf3rfEVfjt0Nc4lDvw6GC.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
-                <div class="wall-pane-outer" id="field_and_mountains">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/AbN2/20240429135940190.jpg" download>
-                            <img src="wallpaper-source/AbN2/20240429135940190.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/AbN2/20240429135940190.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
-                <div class="wall-pane-outer" id="beach_coste_from_water">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/7AbG/724nUe3fsjIu345S45Dfh.jpg" download>
-                            <img src="wallpaper-source/7AbG/724nUe3fsjIu345S45Dfh.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/7AbG/724nUe3fsjIu345S45Dfh.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
-                <div class="wall-pane-outer" id="coste_and_island_from_water">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/7AbG/20240501as13300983245iOasd.jpg" download>
-                            <img src="wallpaper-source/7AbG/20240501as13300983245iOasd.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/7AbG/20240501as13300983245iOasd.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
-                <div class="wall-pane-outer" id="amsterdam1">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/7777/1111/amsterdam_1.png" download>
-                            <img src="wallpaper-source/7777/1111/amsterdam_1.png" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/7777/1111/amsterdam_1.png" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
-                <div class="wall-pane-outer" id="amsterdam3">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/7777/1111/amsterdam_3.png" download>
-                            <img src="wallpaper-source/7777/1111/amsterdam_3.png" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/7777/1111/amsterdam_3.png" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
-                <div class="wall-pane-outer" id="amsterdam2">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/7777/1111/amsterdam_2_tree.png" download>
-                            <img src="wallpaper-source/7777/1111/amsterdam_2_tree.png" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/7777/1111/amsterdam_2_tree.png" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
-                <div class="wall-pane-outer" id="green_grass_and_hill">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/7AbG/20240428091340974.jpg" download>
-                            <img src="wallpaper-source/7AbG/20240428091340974.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/7AbG/20240428091340974.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
-                <div class="wall-pane-outer" id="stone_coste">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/7AbG/20240501144151792.jpg" download>
-                            <img src="wallpaper-source/7AbG/20240501144151792.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/7AbG/20240501144151792.jpg" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
-                <div class="wall-pane-outer" id="clouds">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/7777/1111/Wallpaper-Clouds.png" download>
-                            <img src="wallpaper-source/7777/1111/Wallpaper-Clouds.png" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/7777/1111/Wallpaper-Clouds.png" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
-                <div class="wall-pane-outer" id="ivy_on_the_wall">
-                    <div class="wall-pane">
-                        <a href="wallpaper-source/7AbG/20240816082426380.png" download>
-                            <img src="wallpaper-source/7AbG/20240816082426380.png" alt="">
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="license/">&nbsp;🔑 License &nbsp;</a>
-                        <a href="wallpaper-source/7AbG/20240816082426380.png" download>&nbsp;💾 Download &nbsp;</a>
-                    </div>
-                </div>
-                <br> <br>
-
+             
                 <div style="text-align: center; color: lightgray; margin-bottom: 12px;">
                     <br>
                     ----- Copyright © 2024-2025 C. Prickartz -----

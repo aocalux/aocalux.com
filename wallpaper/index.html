@@ -87,7 +87,7 @@
                         
                     ];
 
-                    const response1 = await fetch("https://api.github.com/repos/aocalux/aocalux.com/contents/wallpaper/wallpaper-source/irl");
+                    const response1 = await fetch("/wallpaper/wallpaper-source/names/irl.names");
                     const data1 = await response1.json();
 
                     for (let row of data1) {
@@ -117,7 +117,7 @@
                         ];
 
 
-                        const response2 = await fetch("https://api.github.com/repos/aocalux/aocalux.com/contents/wallpaper/wallpaper-source/other");
+                        const response2 = await fetch("/wallpaper/wallpaper-source/names/other.names");
                         const data2 = await response2.json();
 
                         for (let row of data2) {
