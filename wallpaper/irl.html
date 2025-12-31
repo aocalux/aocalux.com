@@ -51,8 +51,8 @@
 
             <div id="content">Loading Wallpapers...</div>
             <script>
-                (async () => {
 
+                (async () => {
                     const response1 = await fetch("/wallpaper/wallpaper-source/names/irl.json");
                     let data = await response1.json();
 
@@ -67,9 +67,29 @@
                     content.innerHTML = ""
 
                     for (let row of data) {
-                        content.innerHTML += "<br><div class=\"wall-pane-outer\" id=\"rrose_bush_on_beach\"><div class=\"wall-pane\"><a href=\"wallpaper-source/irl/" + row.name + "\" download><img src=\"wallpaper-source/irl/" + row.name + "\" alt=\"\"></a></div><div class=\"button\"><a href=\"license/\">&nbsp;🔑 License &nbsp;</a><a href=\"wallpaper-source/irl/" + row.name + "\" download>&nbsp;💾 Download &nbsp;</a></div></div><br> <br>"
+                        content.innerHTML += "<br><div class=\"wall-pane-outer\" id=\"rrose_bush_on_beach\"><div class=\"wall-pane\"><a href=\"irl.html?get=" + row.name + "\"><img src=\"wallpaper-source/irl/" + row.name + "\" alt=\"\"></a></div><div class=\"button\"><a href=\"license/\">&nbsp;🔑 License &nbsp;</a><a href=\"irl.html?get=" + row.name + "\">&nbsp;💾 Download &nbsp;</a></div></div><br> <br>"
                     }
+
+                    setTimeout(download, 500);
+                
+
                 })()
+
+                function download() {
+                    let parms = new URLSearchParams(document.location.search);
+                    let getparm = parms.get("get");
+                    if (getparm != null && getparm != "") {
+                        let licenseAgree = confirm("By downloading " + getparm + " you agree to the license terms (www.aocalux.com/wallpaper/license/). Do you want to proceed?");
+                        if (licenseAgree) {
+                            const dLink = document.createElement("a");
+                            dLink.href = "/wallpaper/wallpaper-source/irl/" + getparm;
+                            dLink.download = getparm;
+                            document.body.appendChild(dLink);
+                            dLink.click();
+                            document.body.removeChild(dLink);
+                        }
+                    }
+                }
             </script>
 
 
