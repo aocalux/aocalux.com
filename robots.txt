@@ -1,4 +1,13 @@
-# This robots.txt file controls crawling of URLs under https://chris-prickartz.de.
+# This robots.txt file controls crawling of URLs under https://www.aocalux.com.
+
+# Block the Internet Archive / Wayback Machine crawlers
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
+# Block for everyone
 User-agent: *
 Disallow: /go/
 Disallow: /404.html
