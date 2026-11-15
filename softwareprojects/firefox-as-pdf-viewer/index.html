@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>aocalux | Firefox as PDF Viewer</title>
+    <link rel="shortcut icon" href="/img/fav.png">
+    <link rel="stylesheet" href="/style/page.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <link rel="stylesheet" href="/style/fontstyle.css">
+    <link rel="stylesheet" href="/style/colortext.css">
+    <link rel="stylesheet" href="/style/button.css">
+
+    <link rel="stylesheet" href="/style/code.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <br>
+        <a href="http://www.aocalux.com" class="logo">
+            <img src="/img/logo.png" alt="aocalux FuG Logo">
+        </a>
+        <div class="nav">
+            <br>
+
+            <a href="/">Home</a> <br>
+            <a href="/webprojects/">Web Projects</a> <br>
+            <a href="/softwareprojects/">Software Projects</a> <br>
+            <a href="/wallpaper/">Wallpaper</a> <br>
+            <a href="/wiki/">Wiki</a> <br>
+            <a href="/contact">Contact</a> <br>
+
+        </div>
+        <div class="legal">
+            <a href="/contact/">Contact</a> <br>
+            <a href="/impressum/" target="_blank">Impressum</a> <br>
+            <a href="/privacy-policy/" target="_blank">Privacy Policy</a> <br>
+            <a href="/organizations/aocalux-FuG/">© 2024-2026 - aocalux FuG</a>
+        </div>
+    </div>
+
+    <div class="page">
+        <h1 class="title">Firefox as PDF Viewer</h1>
+
+        <div class="path">
+            <hr>
+            &nbsp; / &nbsp; <a href="/softwareprojects/">Software Projects</a> &nbsp; /
+            &nbsp; <a href="/softwareprojects/firefox-as-pdf-viewer/">Firefox as PDF Viewer</a> &nbsp; /
+            <hr>
+        </div>
+
+        <div class="content">
+            <div class="button">
+                <a href="/go/github_firefox-as-pdf-viewer/" target="_blank">&nbsp; View project on Github &nbsp;</a>
+                <a href="/go/download/firefox-as-pdf-viewer/" target="_blank">&nbsp; Download latest on Github
+                    &nbsp;</a>
+                <a href="/go/github_firefox-as-pdf-viewer/licence.html" target="_blank">&nbsp; 🔑 License &nbsp;</a>
+            </div>
+            <p>
+            <h2 style="margin-bottom: 10px;">What is Firefox as PDF Viewer?</h2>
+            <b>Firefox as PDF Viewer</b> is a custom <code class="inline">userChrome.css</code> stylesheet that gives
+            Firefox a cleaner, more
+            focused layout for viewing PDF documents. It hides selected browser interface elements, including the
+            address bar, to reduce
+            distractions and leave more room for the document. The stylesheet changes Firefox's appearance only; Remove
+            or disable the stylesheet to restore Firefox's
+            usual interface.
+            </p>
+            <p>
+            <h2 class="titleWithSpace">What does the stylesheet affect?</h2>
+            <code class="inline">userChrome.css</code> customizes Firefox's browser interface for the profile where
+            it is installed. The stylesheet does not alter website
+            content, PDF files, or Firefox's PDF rendering. Since Firefox can change its interface between releases,
+            a browser update may affect how the customization looks or works. If the modifications stop working, check
+            for updates to the stylesheet on this site or if it has'nt been updated yet let me know (I've tested it on
+            version 157.0.1 on Ubuntu).
+            </p>
+            <p>
+            <h2 class="titleWithSpace">How do I install it?</h2>
+            To install Firefox as PDF Viewer, follow these steps:
+            <ol>
+                <li>Download the <code class="inline">userChrome.css</code> file from the <a
+                        href="/go/download/firefox-as-pdf-viewer/" target="_blank">GitHub repository</a>.</li>
+                <li>Open Firefox and go to Settings, set the home page to <code class="inline">about:pdf</code> to open
+                    the Firefox PDF viewer / editor page on startup.</li>
+                <li>Navigate to <code class="inline">about:support</code> using the address bar to find your profile
+                    folder.</li>
+                <li>Open the profile folder and create a <code class="inline">chrome</code> folder if it does not
+                    already exist.</li>
+                <li>Place the downloaded <code class="inline">userChrome.css</code> file inside that <code
+                        class="inline">chrome</code> folder.</li>
+                <li>In Firefox, open <code class="inline">about:config</code>, search for
+                    <code class="inline">toolkit.legacyUserProfileCustomizations.stylesheets</code>, and set it to <code
+                        class="inline">true</code>.
+                </li>
+                <li>Restart Firefox to apply the new PDF viewer layout.</li>
+            </ol>
+            </p>
+            <p>
+            <h2 class="titleWithSpace">How do I restore Firefox's usual interface?</h2>
+            Remove or rename <code class="inline">userChrome.css</code> in the profile's <code
+                class="inline">chrome</code> folder, then restart
+            Firefox. You can also set <code class="inline">toolkit.legacyUserProfileCustomizations.stylesheets</code> to
+            <code class="inline">false</code> in <code class="inline">about:config</code> to disable custom user
+            stylesheets. The address bar is hidden, not removed: focus it by pressing <code class="inline">Ctrl+L</code>
+            (or <code class="inline">Cmd+L</code> on macOS), then enter a Firefox
+            address such as <code class="inline">about:settings</code> or <code class="inline">about:config</code>, you
+            will also see autocomplete suggestions just like if the address bar were visible.
+            </p>
+            <p>
+            <h2 class="titleWithSpace">What should I check if the style does not appear?</h2>
+            Confirm the file is named <code class="inline">userChrome.css</code> and is in the active profile's <code
+                class="inline">chrome</code>
+            folder. Check that <code class="inline">toolkit.legacyUserProfileCustomizations.stylesheets</code> is set to
+            <code class="inline">true</code>, then restart Firefox. Firefox interface customizations may need updates
+            after browser
+            changes.
+            </p>
+            <p>
+            <h2 class="titleWithSpace">Under what conditions can I use it?</h2>
+            Firefox as PDF Viewer is licensed under the <a href="/go/github_firefox-as-pdf-viewer/licence.html"
+                target="_blank">MIT License</a>, which means you can use it for free, even for commercial purposes. You
+            can also modify it and redistribute it, as long as you include the original copyright notice and license.
+            </p> <br>
+        </div>
+
+    </div>
+</body>
+
+</html>

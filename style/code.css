@@ -1,29 +1,40 @@
 pre {
-    background-color: #212121;
-    border: 1px solid #212121;
-    border-radius: 8px 8px;
-    font-family: monospace;
-    padding: 10px;
-    overflow: auto;
+  background-color: #212121;
+  border: 1px solid #212121;
+  border-radius: 8px 8px;
+  font-family: monospace;
+  padding: 10px;
+  overflow: auto;
 
-  }
-  
+}
+
 .comment {
-    color: #7c7c7c;
-  }
-  
+  color: #7c7c7c;
+}
+
 .keyword {
-    color: #e79b59;
-  }
-  
+  color: #e79b59;
+}
+
 .function {
-    color: #23b99b;
-  }
-  
+  color: #23b99b;
+}
+
 .string {
-    color: #f7c3df;
-  }
-  
+  color: #f7c3df;
+}
+
 .number {
-    color: #d8f7a2;
-  }
+  color: #d8f7a2;
+}
+
+.inline {
+  background-color: #212121;
+  border: 1px solid #212121;
+  border-radius: 6px 6px;
+  font-family: monospace;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: larger;
+  line-height: 1.5;
+}
